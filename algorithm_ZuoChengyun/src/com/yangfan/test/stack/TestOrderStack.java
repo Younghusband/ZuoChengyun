@@ -6,9 +6,9 @@ import com.yangfan.chapter1.StackAndQueue5_SortByOtherStack;
 
 /************************************************
     * Description: 
-    * @author    Ñî·«  
+    * @author    æ¨å¸†  
     * @version  1.0
-    * @date £º2017Äê1ÔÂ13ÈÕ ÏÂÎç3:21:34 
+    * @date ï¼š2017å¹´1æœˆ13æ—¥ ä¸‹åˆ3:21:34 
 **************************************************/
 public class TestOrderStack {
       public static void main(String[] args) {

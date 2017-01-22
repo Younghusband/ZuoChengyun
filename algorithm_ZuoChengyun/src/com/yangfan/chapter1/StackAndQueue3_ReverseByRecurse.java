@@ -4,7 +4,7 @@ import java.util.Stack;
 
 /************************************************
     * Description: 
-    * ¡¾ÌâÄ¿3¡¿±àĞ´Ò»¸öÀà£¬½öÓÃµİ¹éº¯ÊıºÍÕ»²Ù×÷ÄæĞòÒ»¸öÕ»
+    * ã€é¢˜ç›®3ã€‘ç¼–å†™ä¸€ä¸ªç±»ï¼Œä»…ç”¨é€’å½’å‡½æ•°å’Œæ ˆæ“ä½œé€†åºä¸€ä¸ªæ ˆ
     * 
     * Details:
     * 
@@ -12,9 +12,9 @@ import java.util.Stack;
     * 
     * method1:
     * 
-    * @author    Ñî·«  
+    * @author    æ¨å¸†  
     * @version  1.0
-    * @date £º2017Äê1ÔÂ5ÈÕ ÏÂÎç1:31:15 
+    * @date ï¼š2017å¹´1æœˆ5æ—¥ ä¸‹åˆ1:31:15 
 **************************************************/
 public class StackAndQueue3_ReverseByRecurse {
 	
@@ -27,23 +27,23 @@ public class StackAndQueue3_ReverseByRecurse {
 		stack.add(4);
 		stack.add(5);
 		stack.add(6);
-		//ÀûÓÃµİ¹é  ´ÓÕ»¶¥¿ªÊ¼Êä³östackµÄÖµ
-		System.out.println("´ËÊ±Õ»¶¥ÊÇ  "+stack.peek());  //´ËÊ±ÊÇ6
+		//åˆ©ç”¨é€’å½’  ä»æ ˆé¡¶å¼€å§‹è¾“å‡ºstackçš„å€¼
+		System.out.println("æ­¤æ—¶æ ˆé¡¶æ˜¯  "+stack.peek());  //æ­¤æ—¶æ˜¯6
 		int x = StackAndQueue3_ReverseByRecurse.getLastElement(stack);
 		//after getLast 
-		System.out.println("Õ»µ×ÔªËØ "+x);  //´ËÊ±ÊÇ1
-		System.out.println("´ËÊ±Õ»¶¥ÒÀ¾ÉÊÇ   6");
+		System.out.println("æ ˆåº•å…ƒç´  "+x);  //æ­¤æ—¶æ˜¯1
+		System.out.println("æ­¤æ—¶æ ˆé¡¶ä¾æ—§æ˜¯   6");
 		
 		
 		System.out.println(stack);
 		
-		//Èç¹ûÄæ×ªÕı³£  Ó¦¸ÃÊÇ¼¸
+		//å¦‚æœé€†è½¬æ­£å¸¸  åº”è¯¥æ˜¯å‡ 
 //		int top = stack.peek();
-//		System.out.println("¾­¹ıÄæ×ªºóµÄÕ»¶¥ÔªËØ   "+top);
+//		System.out.println("ç»è¿‡é€†è½¬åçš„æ ˆé¡¶å…ƒç´    "+top);
 	}
      
      /**
-      * µÃµ½Õ»µ×  ÔÚ²»ÆÆ»µÕ»ÄÚÆäËûÔªËØ½á¹¹µÄÇé¿öÏÂ
+      * å¾—åˆ°æ ˆåº•  åœ¨ä¸ç ´åæ ˆå†…å…¶ä»–å…ƒç´ ç»“æ„çš„æƒ…å†µä¸‹
      * @param stack
      * @return
      */

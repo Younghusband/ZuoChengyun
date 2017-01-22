@@ -7,19 +7,19 @@ import java.util.Stack;
 /************************************************
     * Description: 
     * 
-    * ¡¾ÌâÄ¿2¡¿±àĞ´Ò»¸öÀà£¬ÓÃÁ½¸öÕ»ÊµÏÖ¶ÓÁĞ£¬Ö§³Ö¶ÓÁĞµÄ»ù±¾²Ù×÷(add,poll,peek)
+    * ã€é¢˜ç›®2ã€‘ç¼–å†™ä¸€ä¸ªç±»ï¼Œç”¨ä¸¤ä¸ªæ ˆå®ç°é˜Ÿåˆ—ï¼Œæ”¯æŒé˜Ÿåˆ—çš„åŸºæœ¬æ“ä½œ(add,poll,peek)
     * 
-    * Details:Õ»µÄÌØµãÊÇÏÈ½øºó³ö£¬¶ø¶ÓÁĞµÄÌØµãÊÇÏÈ½øÏÈ³ö¡£ÎÒÃÇÓÃÁ½¸öÕ»ÕıºÃÄÜ°ÑË³Ğò·´¹ıÀ´ÊµÏÖÀàËÆ¶ÓÁĞµÄ²Ù×÷¡£
+    * Details:æ ˆçš„ç‰¹ç‚¹æ˜¯å…ˆè¿›åå‡ºï¼Œè€Œé˜Ÿåˆ—çš„ç‰¹ç‚¹æ˜¯å…ˆè¿›å…ˆå‡ºã€‚æˆ‘ä»¬ç”¨ä¸¤ä¸ªæ ˆæ­£å¥½èƒ½æŠŠé¡ºåºåè¿‡æ¥å®ç°ç±»ä¼¼é˜Ÿåˆ—çš„æ“ä½œã€‚
     * 
-    * core:  1.ÀûÓÃÁ½¸öÕ»ÊµÏÖ·´×ª
-    *        2.Ã¿´ÎÖ´ĞĞpeek»òÕßpoll²Ù×÷µÄÊ±ºò¶¼½«pushStackµÄÈ«²¿ÄÚÈİµ¹ÈëpopStack
-    *        3.Èç¹ûpopStack²»Îª¿Õ£¬ÄÇÃ´¾ø¶Ô²»½«pushStackµÄÄÚÈİµ¹ÈëpopStack
+    * core:  1.åˆ©ç”¨ä¸¤ä¸ªæ ˆå®ç°åè½¬
+    *        2.æ¯æ¬¡æ‰§è¡Œpeekæˆ–è€…pollæ“ä½œçš„æ—¶å€™éƒ½å°†pushStackçš„å…¨éƒ¨å†…å®¹å€’å…¥popStack
+    *        3.å¦‚æœpopStackä¸ä¸ºç©ºï¼Œé‚£ä¹ˆç»å¯¹ä¸å°†pushStackçš„å†…å®¹å€’å…¥popStack
     * 
     * method1:
     * 
-    * @author    Ñî·«  
+    * @author    æ¨å¸†  
     * @version  1.0
-    * @date £º2016Äê12ÔÂ15ÈÕ ÏÂÎç1:33:03 
+    * @date ï¼š2016å¹´12æœˆ15æ—¥ ä¸‹åˆ1:33:03 
 **************************************************/
 public class StackAndQueue2_stackQueue {
 	
@@ -32,7 +32,7 @@ public class StackAndQueue2_stackQueue {
 			q.add(5);
 			q.add(6);
 			q.add(7);
-			System.out.println(q);  //´òÓ¡¶ÓÁĞ  ´ËÊ±Îª¿Õ
+			System.out.println(q);  //æ‰“å°é˜Ÿåˆ—  æ­¤æ—¶ä¸ºç©º
 			q.poll();               
 			System.out.println(q);  // 234567
 			q.poll();               
@@ -50,7 +50,7 @@ public class StackAndQueue2_stackQueue {
 	}
 	
 	public void add(int item){
-          pushStack.push(item);   //´æµÄ²Ù×÷ºÜµ¥´¿ Ö»ÊÇÍùpushStackÀïÃæ·ÅÔªËØ		
+          pushStack.push(item);   //å­˜çš„æ“ä½œå¾ˆå•çº¯ åªæ˜¯å¾€pushStacké‡Œé¢æ”¾å…ƒç´ 		
 	}
 	
 	public int peek(){

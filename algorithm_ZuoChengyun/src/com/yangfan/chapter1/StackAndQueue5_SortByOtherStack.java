@@ -4,16 +4,16 @@ import java.util.Stack;
 
 /************************************************
     * Description: 
-    *  ¡¾ÌâÄ¿5¡¿ÓÃÒ»¸öÕ»ÊµÏÖÁíÒ»¸öÕ»µÄÅÅĞò     
-    *   Details:  Ò»¸öÔªËØÀàĞÍÎªIntegerµÄÕ»£¬Èç½ñĞèÒª½«Æä°´ÕÕ´Ó´óµ½Ğ¡µÄË³ĞòÓÉÕ»¶¥ÖÁÕ»µ×ÅÅÁĞ¡£
-    *             Ö»ĞíÉêÇëÒ»¸öÕ»£¬¿ÉÒÔÉêÇëĞÂµÄ±äÁ¿²»ÄÜÉêÇë¶îÍâµÄÊı¾İ½á¹¹¡£ÈçºÎÍê³ÉÅÅĞò£¿
-    *             (ÌâÄ¿ÊÇÕâÑùËµµÄ¡£¡£¡£ µ«ÊÇÕâĞ©»°ÑÏÖØÎóµ¼ÈË°¡  ÒâË¼¾ÍÊÇ´ıÅÅĞòµÄÒ»¸öÕ»£¬³ı´ËÖ®ÍâÄã»¹¿ÉÒÔÉêÇëÒ»¸öÕ»£¡£¡)
-    *   core:     ²»ÔÊĞíĞÂ½¨Êı¾İ½á¹¹£¬¾ÍĞÂ½¨¸ö±äÁ¿À´´æ´¢
+    *  ã€é¢˜ç›®5ã€‘ç”¨ä¸€ä¸ªæ ˆå®ç°å¦ä¸€ä¸ªæ ˆçš„æ’åº     
+    *   Details:  ä¸€ä¸ªå…ƒç´ ç±»å‹ä¸ºIntegerçš„æ ˆï¼Œå¦‚ä»Šéœ€è¦å°†å…¶æŒ‰ç…§ä»å¤§åˆ°å°çš„é¡ºåºç”±æ ˆé¡¶è‡³æ ˆåº•æ’åˆ—ã€‚
+    *             åªè®¸ç”³è¯·ä¸€ä¸ªæ ˆï¼Œå¯ä»¥ç”³è¯·æ–°çš„å˜é‡ä¸èƒ½ç”³è¯·é¢å¤–çš„æ•°æ®ç»“æ„ã€‚å¦‚ä½•å®Œæˆæ’åºï¼Ÿ
+    *             (é¢˜ç›®æ˜¯è¿™æ ·è¯´çš„ã€‚ã€‚ã€‚ ä½†æ˜¯è¿™äº›è¯ä¸¥é‡è¯¯å¯¼äººå•Š  æ„æ€å°±æ˜¯å¾…æ’åºçš„ä¸€ä¸ªæ ˆï¼Œé™¤æ­¤ä¹‹å¤–ä½ è¿˜å¯ä»¥ç”³è¯·ä¸€ä¸ªæ ˆï¼ï¼)
+    *   core:     ä¸å…è®¸æ–°å»ºæ•°æ®ç»“æ„ï¼Œå°±æ–°å»ºä¸ªå˜é‡æ¥å­˜å‚¨
     * 
     *   method1:    
-    * @author    Ñî·«  
+    * @author    æ¨å¸†  
     * @version  1.0
-    * @date £º2017Äê1ÔÂ13ÈÕ ÏÂÎç2:59:09 
+    * @date ï¼š2017å¹´1æœˆ13æ—¥ ä¸‹åˆ2:59:09 
     * 
     * |  5  |
     * |  4  |
@@ -30,8 +30,8 @@ public class StackAndQueue5_SortByOtherStack {
        
        
      /**
-      * Ë¼Â·   ÒªÇóstack Îª´ÓÉÏµ½ÏÂÓÉ´óµ½Ğ¡   ÄÇÃ´help¾Í°´ÕÕ´ÓÉÏµ½ÏÂÓÉĞ¡µ½´ó 
-      *     È»ºóÔÙ½«helpÎŞÑ¹Á¦put½østackÀï
+      * æ€è·¯   è¦æ±‚stack ä¸ºä»ä¸Šåˆ°ä¸‹ç”±å¤§åˆ°å°   é‚£ä¹ˆhelpå°±æŒ‰ç…§ä»ä¸Šåˆ°ä¸‹ç”±å°åˆ°å¤§ 
+      *     ç„¶åå†å°†helpæ— å‹åŠ›putè¿›stacké‡Œ
       * 
      * @param stack
      */
@@ -39,7 +39,7 @@ public class StackAndQueue5_SortByOtherStack {
     	   Stack<Integer> help = new Stack<Integer>();   
     	   while(!stack.isEmpty()){
                 int cur = stack.pop();
-                while(!help.isEmpty()&&cur>help.peek()){   //¼ò¶øÑÔÖ®  ±£Ö¤helpÕ»µ×Îª×î´óÖµ
+                while(!help.isEmpty()&&cur>help.peek()){   //ç®€è€Œè¨€ä¹‹  ä¿è¯helpæ ˆåº•ä¸ºæœ€å¤§å€¼
                 	stack.push(help.pop());
                 }
                 help.push(cur);
@@ -50,21 +50,21 @@ public class StackAndQueue5_SortByOtherStack {
        }
        
        
-       //stack  help   ×îºóstackÎª¿Õ  helpÎªÅÅºÃĞòµÄÕ»     ËäÈ»ÅÅĞòÍê³É  µ«²¢²»·ûºÏÒªÇó
+       //stack  help   æœ€åstackä¸ºç©º  helpä¸ºæ’å¥½åºçš„æ ˆ     è™½ç„¶æ’åºå®Œæˆ  ä½†å¹¶ä¸ç¬¦åˆè¦æ±‚
        public Stack<Integer> sortFalse(Stack<Integer> stack){
     	    Stack<Integer> help = new Stack<Integer>();
     	    if(!stack.isEmpty()){
-    	    	help.push(stack.pop());   //help stack×¢Èë³õÊ¼Öµ
+    	    	help.push(stack.pop());   //help stackæ³¨å…¥åˆå§‹å€¼
     	    }
-    	    while(!stack.isEmpty()){   //stack²»Îª¿ÕµÄÊ±ºò²»Í£µÄ½øĞĞËùÓĞ²Ù×÷
+    	    while(!stack.isEmpty()){   //stackä¸ä¸ºç©ºçš„æ—¶å€™ä¸åœçš„è¿›è¡Œæ‰€æœ‰æ“ä½œ
     	    	if(stack.peek()>help.peek()){
     	    		help.push(stack.pop());
     	    	}else {
-    	    		int temp = stack.pop();  //½«Õâ¸öĞ¡Öµ´ÓstackÈ¡³ö
+    	    		int temp = stack.pop();  //å°†è¿™ä¸ªå°å€¼ä»stackå–å‡º
     	    		while(!help.isEmpty()){
     	    			stack.push(help.pop());
     	    		}
-    	    		help.push(temp);   //´ËÊ±helpÀïÓÖ½öÊ£Ò»¸öÔªËØÁË
+    	    		help.push(temp);   //æ­¤æ—¶helpé‡Œåˆä»…å‰©ä¸€ä¸ªå…ƒç´ äº†
     	    	}
     	    }
     	    return help;

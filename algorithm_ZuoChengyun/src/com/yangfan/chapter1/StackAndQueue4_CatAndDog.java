@@ -10,22 +10,22 @@ import com.tool.chapter1.Pet;
 /************************************************
     * Description: 
     * 
-    * ¡¾ÌâÄ¿4¡¿Ã¨¹·¶ÓÁĞ    pojoÀàÏê¼ûtool.chapter1ÖĞµÄ Pet Dog CatÀà
+    * ã€é¢˜ç›®4ã€‘çŒ«ç‹—é˜Ÿåˆ—    pojoç±»è¯¦è§tool.chapter1ä¸­çš„ Pet Dog Catç±»
     * 
-    * Details:   ¾ßÓĞÈçÏÂ¹¦ÄÜ  
+    * Details:   å…·æœ‰å¦‚ä¸‹åŠŸèƒ½  
     *            add  poll pollDog pollCat isEmpty  isDogEmpty isCatEmpty
-    * core:      ¶ÓÁĞ  Queue --> LinkedList 
-    *            ÊµÏÖ¹¦ÄÜ¿Ï¶¨²»ÄÜ¸Ä¶¯pojoÀà£¬ÕâµãÊÇÌúÔò
+    * core:      é˜Ÿåˆ—  Queue --> LinkedList 
+    *            å®ç°åŠŸèƒ½è‚¯å®šä¸èƒ½æ”¹åŠ¨pojoç±»ï¼Œè¿™ç‚¹æ˜¯é“åˆ™
     * 
     * method1:
     * 
-    * @author    Ñî·«  
+    * @author    æ¨å¸†  
     * @version  1.0
-    * @date £º2017Äê1ÔÂ12ÈÕ ÏÂÎç1:22:05 
+    * @date ï¼š2017å¹´1æœˆ12æ—¥ ä¸‹åˆ1:22:05 
 **************************************************/
 
 /**
- * ¸¨ÖúÀà
+ * è¾…åŠ©ç±»
  *
  */
 class PetEnter {
@@ -54,7 +54,7 @@ class PetEnter {
 public class StackAndQueue4_CatAndDog {
     
     long count;
-    private Queue<PetEnter> DogQ ;   //³õÊ¼»¯ÕâÖÖÊÂÇé½»¸ø¹¹Ôìº¯Êı   ¹¹ÔìÖ®Ç°µÄÒ²¾Í¸ø¸öÉùÃ÷¾ÍĞĞÁË
+    private Queue<PetEnter> DogQ ;   //åˆå§‹åŒ–è¿™ç§äº‹æƒ…äº¤ç»™æ„é€ å‡½æ•°   æ„é€ ä¹‹å‰çš„ä¹Ÿå°±ç»™ä¸ªå£°æ˜å°±è¡Œäº†
     private Queue<PetEnter> CatQ ;
     
     public StackAndQueue4_CatAndDog (){
@@ -64,7 +64,7 @@ public class StackAndQueue4_CatAndDog {
     }
 	
 	/**
-	 * Ìí¼Ó³èÎï
+	 * æ·»åŠ å® ç‰©
 	 * @param pet
 	 * @core
 	 */
@@ -79,7 +79,7 @@ public class StackAndQueue4_CatAndDog {
 	}
 	
 	/**
-	 * µ¥´Î  °´Ë³Ğò  ÎŞ²î±ğµ¯³ö³èÎï
+	 * å•æ¬¡  æŒ‰é¡ºåº  æ— å·®åˆ«å¼¹å‡ºå® ç‰©
 	 * @return
 	 */
 	public Pet poll(){
@@ -101,7 +101,7 @@ public class StackAndQueue4_CatAndDog {
 	
 	
 	/**
-	 * µ¥´Î  °´Ë³Ğò  µ¯³öÃ¨
+	 * å•æ¬¡  æŒ‰é¡ºåº  å¼¹å‡ºçŒ«
 	 * @return
 	 */
 	public Cat pollCat(){
@@ -112,7 +112,7 @@ public class StackAndQueue4_CatAndDog {
 	}
 	
 	/**
-	 * µ¥´Î  °´Ë³Ğò  µ¯³ö¹·
+	 * å•æ¬¡  æŒ‰é¡ºåº  å¼¹å‡ºç‹—
 	 * @return
 	 */
 	public Dog pollDog(){
@@ -123,21 +123,21 @@ public class StackAndQueue4_CatAndDog {
 	}
 	
 	/**
-	 * Ã¨¹·¶ÓÁĞÊÇ·ñÎª¿Õ
+	 * çŒ«ç‹—é˜Ÿåˆ—æ˜¯å¦ä¸ºç©º
 	 * @return
 	 */
 	public boolean isEmpty(){
 		return this.DogQ.isEmpty()&&this.CatQ.isEmpty();
 	}
 	/**
-	 * ÊÇ·ñÃ¨Îª¿Õ
+	 * æ˜¯å¦çŒ«ä¸ºç©º
 	 * @return
 	 */
 	public boolean isCatEmpty(){
 		return this.CatQ.isEmpty();
 	}
 	/**
-	 * ÊÇ·ñ¹·Îª¿Õ
+	 * æ˜¯å¦ç‹—ä¸ºç©º
 	 * @return
 	 */
 	public boolean isDogEmpty(){

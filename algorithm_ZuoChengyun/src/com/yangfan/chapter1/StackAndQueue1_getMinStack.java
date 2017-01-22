@@ -5,22 +5,22 @@ import java.util.Stack;
 /************************************************
  * Description:
  * 
- * ¡¾ÌâÄ¿1¡¿ Éè¼ÆÒ»¸öÓĞgetMin¹¦ÄÜµÄÕ»
+ * ã€é¢˜ç›®1ã€‘ è®¾è®¡ä¸€ä¸ªæœ‰getMinåŠŸèƒ½çš„æ ˆ
  * 
- * Details: ÔÚÊµÏÖÕ»µÄ»ù±¾¹¦ÄÜµÄ»ù´¡ÉÏ£¬ÔÙÊµÏÖ·µ»ØÕ»ÖĞ×îĞ¡ÔªËØµÄ²Ù×÷
+ * Details: åœ¨å®ç°æ ˆçš„åŸºæœ¬åŠŸèƒ½çš„åŸºç¡€ä¸Šï¼Œå†å®ç°è¿”å›æ ˆä¸­æœ€å°å…ƒç´ çš„æ“ä½œ
  * 
- * Method1: pushÊ¡¿Õ¼äµ«·ÑÊ±¼ä,pop·ÑÊ±¼ä
+ * Method1: pushçœç©ºé—´ä½†è´¹æ—¶é—´,popè´¹æ—¶é—´
  * 
- * Method2: pushÊ¡Ê±¼äµ«·Ñ¿Õ¼ä£¬pop¼òµ¥
+ * Method2: pushçœæ—¶é—´ä½†è´¹ç©ºé—´ï¼Œpopç®€å•
  * 
- * @author Ñî·« 
+ * @author æ¨å¸† 
  * @version 1.0
- * @date £º2016Äê12ÔÂ15ÈÕ ÉÏÎç11:44:28
+ * @date ï¼š2016å¹´12æœˆ15æ—¥ ä¸Šåˆ11:44:28
  **************************************************/
 public class StackAndQueue1_getMinStack {  //method 1
    
 	/**
-	 * ÎÒÔÚË¼¿¼°¡ ËûÕâÒ»´ó¶Ñ"this."ÄÜ²»ÄÜÈ¥µô
+	 * æˆ‘åœ¨æ€è€ƒå•Š ä»–è¿™ä¸€å¤§å †"this."èƒ½ä¸èƒ½å»æ‰
 	 * 
 	 * */
 	
@@ -54,8 +54,8 @@ public class StackAndQueue1_getMinStack {  //method 1
 
 	public int getMin() {
 		if (this.minStack.isEmpty()) {
-			throw new RuntimeException("your stack is empty"); // ÕâÀïÎªÊ²Ã´ÓÃruntimeException
-																// ¶ø²»ÊÇexception
+			throw new RuntimeException("your stack is empty"); // è¿™é‡Œä¸ºä»€ä¹ˆç”¨runtimeException
+																// è€Œä¸æ˜¯exception
 		} 
 			return this.minStack.peek();
 	}

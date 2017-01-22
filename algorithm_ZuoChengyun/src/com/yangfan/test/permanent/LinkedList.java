@@ -1,12 +1,12 @@
 package com.yangfan.test.permanent;
 
 /************************************************
- * Description: ÓÃjavaÊµÏÖÁ´±í½á¹¹£¬ÎªË¢×ó³ÌÔÆÄÇ±¾ÊéµÚ¶şÕÂÈÈÉí
+ * Description: ç”¨javaå®ç°é“¾è¡¨ç»“æ„ï¼Œä¸ºåˆ·å·¦ç¨‹äº‘é‚£æœ¬ä¹¦ç¬¬äºŒç« çƒ­èº«
  * 
  * 
- * @author Ñî·« Copyright: Copyright (c) 2016
+ * @author æ¨å¸† Copyright: Copyright (c) 2016
  * @version 1.0
- * @date £º2016Äê12ÔÂ15ÈÕ ÏÂÎç4:43:38
+ * @date ï¼š2016å¹´12æœˆ15æ—¥ ä¸‹åˆ4:43:38
  **************************************************/
 public class LinkedList {
 	
@@ -40,8 +40,8 @@ public class LinkedList {
 
 	public void insertFirst(Object obj) {
 		Data data = new Data(obj);
-		data.next = first; // ĞÂµÄ½ÚµãµÄnextÖ¸ÏòÖ®Ç°µÄµÚÒ»¸ö½Úµã
-		first = data; // firstÖ¸ÏòÏÖÔÚµÄ½Úµã
+		data.next = first; // æ–°çš„èŠ‚ç‚¹çš„nextæŒ‡å‘ä¹‹å‰çš„ç¬¬ä¸€ä¸ªèŠ‚ç‚¹
+		first = data; // firstæŒ‡å‘ç°åœ¨çš„èŠ‚ç‚¹
 	}
 
 	public Object deleteFirst() throws Exception {
@@ -61,7 +61,7 @@ public class LinkedList {
 		Data cur = first;
 		while (cur != null) {
 			if (obj.equals(cur.obj)) {
-				return cur.obj; // ´«Èëobj ·µ»Øobj ÒâÒåºÎÔÚ£¿ ±ÈÈçÕÒÒ»¸öÊı×Ö1 ÕÒµ½ÁË ¸øÄã·µ»ØÒ»¸ö1 ÒâÒåºÎÔÚ£¿
+				return cur.obj; // ä¼ å…¥obj è¿”å›obj æ„ä¹‰ä½•åœ¨ï¼Ÿ æ¯”å¦‚æ‰¾ä¸€ä¸ªæ•°å­—1 æ‰¾åˆ°äº† ç»™ä½ è¿”å›ä¸€ä¸ª1 æ„ä¹‰ä½•åœ¨ï¼Ÿ
 			}
 			cur = cur.next;
 		}

@@ -1,11 +1,11 @@
 package com.yangfan.test.permanent;
 /************************************************
     * Description: 
-    * @author    Ñî·«  
+    * @author    æ¨å¸†  
     * Copyright: Copyright (c) 2016
-    * Company:   Áª¶¯ÓÅÊÆ
+    * Company:   è”åŠ¨ä¼˜åŠ¿
     * @version  1.0
-    * @date £º2016Äê12ÔÂ19ÈÕ ÉÏÎç9:37:41 
+    * @date ï¼š2016å¹´12æœˆ19æ—¥ ä¸Šåˆ9:37:41 
 **************************************************/
 public class LinkedList1 {
 	   
@@ -33,7 +33,7 @@ public class LinkedList1 {
 		   }
 		   Data temp = first;
 		   first= first.next;
-		   return temp.obj;    //·µ»ØtempºÁÎŞÒâÒå  ·µ»Øtemp.obj²ÅÓĞÒâÒå
+		   return temp.obj;    //è¿”å›tempæ¯«æ— æ„ä¹‰  è¿”å›temp.objæ‰æœ‰æ„ä¹‰
 	   }
 	   
 	   public Object findObj(Object obj){

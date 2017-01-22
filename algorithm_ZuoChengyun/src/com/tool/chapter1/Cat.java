@@ -3,9 +3,9 @@ package com.tool.chapter1;
     * Description: 
     *    chapter1 : StackAndQueue4_CatAndDog
     * 
-    * @author    Ñî·«  
+    * @author    æ¨å¸†  
     * @version  1.0
-    * @date £º2017Äê1ÔÂ12ÈÕ ÏÂÎç1:26:02 
+    * @date ï¼š2017å¹´1æœˆ12æ—¥ ä¸‹åˆ1:26:02 
 **************************************************/
 public class Cat extends Pet{
 

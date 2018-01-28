@@ -15,5 +15,4 @@ public class Pet {
     public String getPetType(){
     	return this.type;
     }
-    ///
 }

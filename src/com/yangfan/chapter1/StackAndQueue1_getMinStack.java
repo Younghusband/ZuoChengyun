@@ -36,7 +36,7 @@ public class StackAndQueue1_getMinStack {  //method 1
 		this.dataStack.push(newnum);
 		if (this.minStack.isEmpty()) {
 			this.minStack.push(newnum);
-		} else if (newnum < this.getMin()) {
+		} else if (newnum <= this.getMin()) {  //修复bug，之前少了=号 如果出栈时存在重复最小值，则有可能出bug
 			this.minStack.push(newnum);
 		}
 	}
